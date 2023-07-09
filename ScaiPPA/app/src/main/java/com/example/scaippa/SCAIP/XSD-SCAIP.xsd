@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.hi.se/2012/XScapXML"
+    elementFormDefault="qualified">
+<xsd:element name="message-request" type="message-request"/>
+<xsd:complexType name="message-request">
+<xsd:sequence>
+<xsd:element name="reference" type="xsd:hexBinary"/>
+<xsd:element name="version" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="system-config" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="call-handling" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="message-type" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="controller-id" type="xsd:hexBinary"/>
+<xsd:element name="device-type" type="xsd:hexBinary"/>
+<xsd:element name="device-id" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="device-component" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="device-text" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="caller-id" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="status-code" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="status-text" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="priority" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="location-code" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="location-value" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="location-text" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="info-code" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="info-text" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="additional-message" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="number-of-messages" type="xsd:hexBinary" minOccurs="0"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="message-reponse" type="message-response"/>
+<xsd:complexType name="message-response">
+<xsd:sequence>
+<xsd:element name="reference" type="xsd:hexBinary"/>
+<xsd:element name="status-number" type="xsd:hexBinary"/>
+<xsd:element name="status-text" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="common-version" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="system-reply" type="xsd:hexBinary" minOccurs="0"/>
+<xsd:element name="transferred-number" type="xsd:hexBinary" minOccurs="0"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

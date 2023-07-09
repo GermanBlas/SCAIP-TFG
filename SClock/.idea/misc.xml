@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/generic_confirmation.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/generic_confirmation_animation.xml" value="0.2335" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/open_on_phone.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_action_item_background.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_action_item_icon_background.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_ic_expand_less_white_22.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_ic_expand_more_white_22.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_ic_more_horiz_24dp_wht.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_ic_more_vert_24dp_wht.xml" value="0.2555" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/drawable/ws_open_on_phone_animation.xml" value="0.2335" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_action_drawer_item_view.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_action_drawer_peek_view.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_action_drawer_title_view.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_navigation_drawer_view.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_overlay_confirmation.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_single_page_nav_drawer_1_item.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_single_page_nav_drawer_2_item.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/.gradle/caches/transforms-3/b2cb22d87081ba89d3a2207ae59e9366/transformed/wear-1.1.0/res/layout/ws_single_page_nav_drawer_4_item.xml" value="0.4445606694560669" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/drawable/round.xml" value="0.1" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/drawable/round2.xml" value="0.121" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/activity_main.xml" value="0.1821705426356589" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/button_alarm.xml" value="0.5903083700440529" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/button_lista_layout.xml" value="0.25925925925925924" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/choice_alarm_layout.xml" value="0.8672566371681416" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/list_layout.xml" value="0.1" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/lista_layout.xml" value="0.2290748898678414" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/lista_layout_button.xml" value="0.26778242677824265" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/lista_layout_button2.xml" value="0.26778242677824265" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/rec_layout.xml" value="0.39748953974895396" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/simple_alarm_layout.xml" value="0.4" />
+        <entry key="..\:/Users/gsdne/AndroidStudioProjects/SClock/app/src/main/res/layout/zzzlist_layout.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
