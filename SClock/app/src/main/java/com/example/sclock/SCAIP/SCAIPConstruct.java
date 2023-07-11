@@ -164,8 +164,6 @@ public class SCAIPConstruct {
                 break;
             case "dty":
                 argumentoGeneral = device_type;
-            case "lge":
-                //todo tengo que poner aqui como conseguir las coordenadas del reloj
                 break;
             default:
                 Log.e("Error", "Error");
@@ -201,6 +199,5 @@ public class SCAIPConstruct {
         }
         return response;
     }
-
 
 }

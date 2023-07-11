@@ -11,8 +11,7 @@ import android.os.Bundle;
 import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.example.sclock.R;
 import com.example.sclock.SCAIP.SCAIPAutoMessager;
@@ -21,7 +20,6 @@ import com.example.sclock.SCAIP.SCAIPListener;
 import com.example.sclock.SCAIP.SCAIPWebApplication;
 import com.example.sclock.basedatos.MiBaseDatos;
 import com.example.sclock.basedatos.Remensaje;
-import com.example.sclock.databinding.ActivityMainBinding;
 
 import org.xml.sax.SAXException;
 
@@ -62,15 +60,12 @@ public class MainActivity extends Activity {
             Source schemaFile = new StreamSource(getResources().openRawResource(R.raw.xsd_scaip));
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(schemaFile);
-            SCAIPConstruct = new SCAIPConstruct("01.00","836710811199107", "0002", schema); //todo poner datos coherentes
+            SCAIPConstruct = new SCAIPConstruct("01.00","836710811199107", "0002", schema);
             SCAIPConstruct.MDBinsert(MDB);
             global.setSCAIPConstruct(SCAIPConstruct);
         } catch (SAXException e) {
             Log.e("MainActivity", "Error :" + e);
         }
-
-        //todo hay que revisar si hace falta quitarlo
-        System.setProperty("javax.net.ssl.trustAllCerts", "true");
 
         //Guardamos los certificados en el almacenamiento del movil
         //Primero la keyStore
@@ -116,8 +111,6 @@ public class MainActivity extends Activity {
                 Log.e("LogMain", "Error: " + e);
             }
 
-
-            //todo rehacer certificado
             String keyStoreType = "BKS";
             String keyStorePassword = "SCAIPPa";
             String trustStoreType = "BKS";
@@ -145,7 +138,7 @@ public class MainActivity extends Activity {
             String ipAddressEnd = "192.168.1.251";
             String portEnd = "5060";
 
-            String transportProtocol = "TCP";
+            String transportProtocol = "TLS";
             //Si se usa el protocolo TLS los puertos son 5061
             if(transportProtocol == "TLS"){
                 port = "5061";
@@ -189,7 +182,7 @@ public class MainActivity extends Activity {
             Long cSeq = cSeqHeader.getSeqNumber();
             MDB.insertarRemensaje(callID,cSeq, ipAddressProxy, name, portProxy, method, null);
             Remensaje remensaje = MDB.recuperarRemensajes("callID='" + callID + "'").get(0);
-            Log.i("LogMain", "Request : " + request); // todo se puede quitar
+            Log.i("LogMain", "Request : " + request);
             SCAIPListener.MDBinsert(MDB);
             SCAIPListener.globalInsert(global);
 

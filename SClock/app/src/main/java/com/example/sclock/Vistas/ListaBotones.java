@@ -35,7 +35,7 @@ public class ListaBotones  extends Activity {
         //Vamos a crear una vista con scroll
         vistaScroll = (RecyclerView) findViewById(R.id.recyclerid);
         WearableLinearLayoutManager layoutManager = new WearableLinearLayoutManager(this);
-        layoutManager.setSmoothScrollbarEnabled(true); //todo creo que sobra
+        layoutManager.setSmoothScrollbarEnabled(true);
         vistaScroll.setLayoutManager(layoutManager);
 
         //Recuperamos el nombre de cada tipo de alarmas
@@ -70,7 +70,6 @@ public class ListaBotones  extends Activity {
         //Recuperamos la plantilla de la alarma para ver el tipo de alarma
         String type = MDB.recuperarPlantillas("nombreAlarma='" + alarmText + "'").get(0).getAutoManual();
         //Dependiendo de ella vamos a la vista manual o automatica
-        //todo podemos mejorar la inclusion del intent ese si es unico
         if(type.equals("Manual")){
             Intent intent = new Intent(this, SimpleAlarmView.class);
             Bundle b = new Bundle();
@@ -92,12 +91,12 @@ public class ListaBotones  extends Activity {
 
     private void insertarPlantillas(){
 
-        MDB.insertarPlantilla("Help Assistance", "Manual","","");
+        MDB.insertarPlantilla("Help Assistance", "Manual","ref::cid::dty::stc", "stc=001");
         MDB.insertarPlantilla("Pill taken", "Manual", "ref::cid::dty::stc", "stc=001");
         MDB.insertarPlantilla("Heartbeat", "Automatica", "ref::mty::hbo::cid::dty", "mty=PI::hbo=001");
-        MDB.insertarPlantilla("Battery Status","Automatica","","");
-        MDB.insertarPlantilla("GPS Status","Automatica","","");
-        MDB.insertarPlantilla("Temperature Status","Automatica","","");
+        MDB.insertarPlantilla("Battery Status","Automatica","ref::cid::dty::stc", "stc=001");
+        MDB.insertarPlantilla("GPS Status","Automatica","ref::cid::dty::stc", "stc=001");
+        MDB.insertarPlantilla("Temperature Status","Automatica","ref::cid::dty::stc", "stc=001");
 
     }
 }

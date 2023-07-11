@@ -3,7 +3,6 @@ package com.example.sclock.SCAIP;
 import android.gov.nist.javax.sip.header.CSeq;
 import android.gov.nist.javax.sip.header.CallID;
 import android.javax.sip.ClientTransaction;
-import android.javax.sip.Dialog;
 import android.javax.sip.DialogTerminatedEvent;
 import android.javax.sip.IOExceptionEvent;
 import android.javax.sip.ListeningPoint;
@@ -107,8 +106,6 @@ public class SCAIPListener implements SipListener {
             properties.setProperty("android.javax.sip.OUTBOUND_PROXY", ipAddressProxy + ":" + portProxy + "/" + transportProtocol);
         }
         properties.setProperty("android.javax.sip.STACK_NAME", name);
-        properties.setProperty("android.javax.sip.IP_ADDRESS", ipAddress);
-
         properties.setProperty("android.gov.nist.javax.sip.ENABLED_CIPHER_SUITES","TLS_RSA_WITH_AES_128_CBC_SHA");
         properties.setProperty("android.gov.nist.javax.sip.TLS_CLIENT_AUTH_TYPE", "DisabledAll");
 
@@ -140,13 +137,13 @@ public class SCAIPListener implements SipListener {
             SipURI fromAddress = addressFactory.createSipURI(name, ipAddress);
             Address fromNameAddress = addressFactory.createAddress(fromAddress);
             fromNameAddress.setDisplayName(name);
-            FromHeader fromHeader = headerFactory.createFromHeader(fromNameAddress, "12345"); //todo esta tag es importante?
+            FromHeader fromHeader = headerFactory.createFromHeader(fromNameAddress, "12345");
 
             // Crea cabecera To
             SipURI toAddress = addressFactory.createSipURI(toUser, toSipAddress);
             Address toNameAddress = addressFactory.createAddress(toAddress);
             toNameAddress.setDisplayName(toUser);
-            ToHeader toHeader = headerFactory.createToHeader(toNameAddress, null); //todo tenemos la contraparte
+            ToHeader toHeader = headerFactory.createToHeader(toNameAddress, null);
 
             // Crea RequestURI
             SipURI requestURI = addressFactory.createSipURI(toUser, toSipAddress + ":" + toSipPort);
@@ -184,7 +181,8 @@ public class SCAIPListener implements SipListener {
     public Request createRequest(String toSipAddress, String toUser, String toSipPort, String requestMethod, String dataMessage){
         Request request = this.createRequest(toSipAddress,toUser,toSipPort,requestMethod);
         try {
-            ContentTypeHeader contentTypeHeader = headerFactory.createContentTypeHeader("text", "plain"); //todo puedo poner lo que me de la gana??
+            //Deberia ser application, scaip+xml
+            ContentTypeHeader contentTypeHeader = headerFactory.createContentTypeHeader("text", "plain");
             request.setContent(dataMessage, contentTypeHeader);
         }catch(Exception e){
             Log.e("LogListener", name + ": Exception = " + e);
@@ -262,7 +260,6 @@ public class SCAIPListener implements SipListener {
 
     public void processCancel(RequestEvent requestEvent, ServerTransaction serverTransaction){}
 
-    //todo deberia revisar esto pero funciona joya
     public void processMessage(RequestEvent requestEvent, ServerTransaction serverTransaction) {
         SipProvider sipProvider = (SipProvider) requestEvent.getSource();
         Request request = requestEvent.getRequest();

@@ -8,9 +8,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sclock.R;
-import com.example.sclock.SCAIP.SCAIPConstruct;
-import com.example.sclock.SCAIP.SCAIPListener;
-import com.example.sclock.SCAIP.SCAIPWebApplication;
 import com.example.sclock.basedatos.MiBaseDatos;
 import com.example.sclock.basedatos.Plantilla;
 
@@ -77,5 +74,4 @@ public class ChoiceAlarmView extends Activity {
         finish();
 
     }
-
 }
